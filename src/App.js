@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import './App.css';
 import NavigationBar from './components/NavigationBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Students from './components/Students';
 const Product = React.lazy(() => import('./components/Product'));
 const Course = React.lazy(() => import('./components/Course'));
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Product />} />
           <Route path='/course' element={<Course />} />
+          <Route path='/student' element={<Students />} />
         </Routes>
       </Suspense>
     </Router>

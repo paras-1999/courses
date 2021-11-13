@@ -19,7 +19,8 @@ export default function NavigationBar() {
                     </Navbar.Brand>
                     <Nav className='mx-auto'>
                         <Link to="/" className="nav-link text-light" >Products</Link>
-                        <Link to="/course" className="nav-link text-light" href="#">Courses</Link>
+                        <Link to="/course" className="nav-link text-light" >Courses</Link>
+                        <Link to="/student" className="nav-link text-light" >Students</Link>
                     </Nav>
 
                 </Container>
